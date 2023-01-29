@@ -1,0 +1,26 @@
+textarea{
+    height:300px;
+}
+.align-center{
+    vertical-align:middle;
+}
+form {
+    margin-left: 25%;
+    margin-right:25%;
+    width: 100%;
+    
+}
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bg-color{
+    background-color: #f6f6f6;
+  }
+  .corner-text{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+  }
+  app-root{
+    background-color: #f6f6f6;
+  }

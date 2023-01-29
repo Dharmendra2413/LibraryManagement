@@ -1,0 +1,29 @@
+.right-margin{
+    text-align:right;
+}
+.icon-bar {
+    overflow: auto; /* Overflow due to float */
+    
+  }
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: black; /* White text color */
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(228, 8, 8); /* Add a hover color */
+  }
+  .a.active{color: #05FD54; background-color: #9B59B6}
+  footer{
+    position:fixed;
+    bottom:0px;
+    background-color:pink;
+    width:100%;
+  }
+  li{
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0ch;
+    font-weight:200;
+  }

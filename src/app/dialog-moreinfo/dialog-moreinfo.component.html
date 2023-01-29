@@ -1,0 +1,39 @@
+<div class="body" style="width: 500px;">
+  <!-- <h1 mat-dialog-title>Request more info</h1> -->
+  <div>
+    <a href="http://localhost:4200/Assignment" class="close"></a>
+    <!-- <button mat-button mat-dialog-close cdkFocusInitial class="close">Send</button> -->
+  </div>
+  <div mat-dialog-content class="row">
+    <span class="border-primary">
+      <input type="text" class="txt-margin" placeholder="First Name*">
+    </span>
+    <span class="border-primary">
+      <input type="text" class="txt-margin"  placeholder="Email*">
+    </span>
+    <span class="border-primary">
+      <input type="text" class="txt-margin" placeholder="Phone*">
+    </span>
+    <span class="border-primary">
+      <textarea id="txtRequest" rows="6" class="txt-margin" name="txtRequest" placeholder="I would like to request an Investor package on this project."></textarea>
+    </span>
+    <h5 align="center">Are you a Realtor</h5>
+    <div align="center">
+      <input type="radio" id="Yes" name="rd_YesNo" value="Yes" text="Yes">
+      <label class="option-margin">Yes</label>
+      <input type="radio" id="No" name="rd_YesNo" value="No" text="No">
+      <label class="option-margin">No</label>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close cdkFocusInitial style="background-color:red; color: aliceblue;">Send</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- <form class="example-form">
+<mat-form-field class="example-full-width">
+  <mat-label>Leave a comment</mat-label>
+  <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+</mat-form-field>
+</form> -->

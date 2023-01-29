@@ -1,0 +1,189 @@
+<div class="bg-color">
+<nav aria-label="breadcrumb" class="bg-color">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="http://localhost:4200/home">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">assignment</li>
+    </ol>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide bg-color" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://99homes.ca/wp-content/uploads/layerslider/Blog/bg51.jpg" class="d-block w-10" width="100%" height="500px" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://99homes.ca/wp-content/uploads/2022/07/harbourwalk.jpeg" class="d-block w-10" width="100%" height="500px" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://99homes.ca/wp-content/uploads/2021/01/northoak3.jpg" class="d-block w-10" width="100%" height="500px" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<h2 align="center">Condo Assignments Toronto</h2>
+<div class="container bg-color">
+    <div class="row justify-content-md-center row-margin">
+      <div class="col-3" *ngFor="let index of [0,1,2,3,4,5,6,7]">
+        <mat-card class="example-card corner-card">
+            <img mat-card-image class="example-header-image" width="500px" src="https://99homes.ca/wp-content/uploads/2015/08/mintooakvillage-400x300.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content class="mat-card-content">
+              <h3>
+              <p>
+                <b>Minto Oakvillage</b>
+              </p>
+            </h3>
+            <div class="div-content font-change">
+              <i class="fa fa-signal"></i>
+              No. of units:300
+            </div>
+              <div class="div-content">
+                <i class="fa fa-building"></i>
+                Storeys:20
+              </div>
+              <div class="div-content">
+                <i class="fa fa-user"></i>
+                Developer:Minto
+              </div>
+                <div class="div-content">
+                  <i class="fa fa-map-marker"></i>
+                  Address:Trafalgar Road
+              </div>
+            </mat-card-content>
+            <br>
+            <div class="div-content">
+              <mat-card-actions>
+            <button type="submit" class="btn btn-danger select" (click)="openDialog('5ms', '5ms')">Request more info</button>
+            </mat-card-actions>
+            </div>
+          </mat-card>
+      </div>
+    </div>
+
+    <!-- <div>
+      <mat-card appMaterialElevation (click)="select(titles[0])" [ngClass]="{'selected-card':titleSelected === 'title1'}">
+        <mat-card-header>
+          <mat-card-title>{{titles[0]}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            This card changes elevation when you hover over it!
+          </p>
+        </mat-card-content>
+      </mat-card><br>
+      
+      <mat-card appMaterialElevation (click)="select(titles[1])" [ngClass]="{'selected-card':titleSelected === 'title2'}">
+        <mat-card-header>
+          <mat-card-title>{{titles[1]}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            This card changes elevation when you hover over it!
+          </p>
+        </mat-card-content>
+      </mat-card><br>
+      
+      <mat-card appMaterialElevation (click)="select(titles[2])" [ngClass]="{'selected-card':titleSelected === 'title3'}">
+        <mat-card-header>
+          <mat-card-title>{{titles[2]}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            This card changes elevation when you hover over it!
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div> -->
+
+
+
+  <mat-card-footer>
+    <br>
+    <hr>
+    <h5 align="center">Are You Not Able To Find What You Were Looking For?  Let Us Find It For You!</h5>
+    
+    <div class="form-row align-center" align="center">
+      <div class="form-group col-md-6 txt-margin">
+          <input type="text" class="form-control corner-Text" id="FullName" placeholder="Full Name*">
+        </div>
+    <div class="form-group col-md-6 txt-margin" >
+      <input type="email" class="form-control corner-Text" id="Email" placeholder="Email*">
+    </div>
+    <div class="form-group col-md-6 txt-margin">
+      <input type="phone" class="form-control corner-Text" id="Phone" placeholder="Phone*">
+    </div>
+    <div class="form-group col-md-6 txt-margin">
+      <input type="text" class="form-control corner-Text" id="ProjType" placeholder="Project name or Address">
+    </div>
+    <div class="form-group col-md-6 txt-margin">
+      <input type="text" class="form-control corner-Text" id="UnitType" placeholder="Unit Type(e.g. 1B, 1+Den, 2B, 3B">
+    </div>
+    <div class="form-group col-md-6 txt-margin">
+      <input type="text" class="form-control corner-Text" id="Budget" placeholder="Budget(e.g. $500,000">
+    </div>
+    <div class="form-group col-md-6 txt-margin">
+      <input type="text" class="form-control corner-Text" id="AnyOther" placeholder="Any Other preference">
+    </div>
+  <br>
+  <button type="submit" class="btn btn-danger select">Submit my request</button>
+  </div>
+
+
+  
+    <br><br>
+<div style="justify-content:stretch;">
+<h5>How Do Condo Assignments Work?</h5>
+<p>If you wish to buy a brand new suite in a newly built condominium in your area only to find that all condos in your chosen area have been sold out? Even if you discover that condos you wish to own are sold out, you can still buy them. That is possible with an ‘Assignment of Agreement of Purchase and Sale’ or simply known as ‘Assignment Sale’.</p>
+
+<h5>Why Do People Assign Their Condo?</h5>
+<p>A buyer who has bought a new condo in pre-construction stage a couple of years back decides to sell his condo before closing due to some reason such a change in financial condition, job, marital status or wish to make a profit. It cannot be a sold using conventional methods as City has not given the permission for Occupancy yet. Though original buyer can legally assign the condo to a thirty-party buyer through ‘Assignment of Agreement of Purchase and Sale’.</p>
+
+<h5>Benefit To The Buyer (Assignee)</h5>
+<p>There can be various reasons for entering into such an agreement.</p>
+  <ul>
+    <li>
+      Mostly, It’s the only way for the buyer(Assignee) to purchase a brand new unit within a few months of completion thus avoiding the risk of the project being cancelled (lost equity) and long wait time of typical pre-construction.
+    </li>
+    <li>
+      Buyer (Assignee) receives a price discount over current properties on the market. This is a great way to build equity in the unit as prices typically go up once the Building is registered and Condos are offered on the resale market.
+    </li>
+    <li>
+      Buyer will receive a brand new home with Tarion warranty and depending on the stage of construction, the ability to make finish selections.
+    </li>
+    <li>
+      Buyer may sometimes take advantage of the deposits made by the Assignor and may be able to put a lower deposit (especially if the unit is in occupancy and close to final closing).
+    </li>
+  </ul>
+
+
+<h5>Benefit To The Seller (Assignor)</h5>
+<ul>
+  <li>Since there are buyers available, especially of Toronto Condos that are high in demand, original buyers may sell their newly purchased condo for a decent profit.</li>
+  <li>Avoids Builder closing costs, Tarion fees and Land transfer taxes.</li>
+  <li>Seller may not have to pay GST/HST rebate back to Builder (Consult a tax professional with regards to potential GST/HST on increased unit value). Individuals who do not intend to occupy the unit on closing are required to pay this rebate back to Builder. Though investors who plan to rent the unit out for at least one year can claim the HST back from the Government but would still have to come up with this significant amount on closing with Builder.</li>
+  <li>The Seller (Assignor) avoids carrying costs such as maintenance fees, property taxes, mortgage associated with the unit after the final closing while the property is up for sale.</li>
+  <li>Faster return of deposit (ROI). Most assignments require that all of the Assignor’s initial deposit to Builder be returned at the time Builder executes the assignment. This frees up Assignor’s deposit for other investments and avoiding the long wait until final closing.</li>
+  <li>Changes in circumstances such as change of job, marriage, the birth of children, illness, etc. can lead the original buyer to sell his or her condo. It helps in relieving from the contract.</li>
+</ul>
+
+<h5>Assignments Comprehensive Guide & FAQs</h5>
+<p>Do you have more questions? We have written a comprehensive guide for our clients.</p>
+    
+</div>  
+
+  </mat-card-footer>
+  <br><br><br><br><br><br><br>
+</div>
+</div>
+

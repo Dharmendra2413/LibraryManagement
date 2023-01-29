@@ -1,0 +1,47 @@
+.body{
+    background-color: #EF7944;
+  }
+.txt-margin {
+    border: 0px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    padding: 10px;
+  }
+  .option-margin{
+    margin:5px;
+  }
+  input::placeholder {
+    color: #818181;
+    font-family: sans-serif;
+  }
+  textarea::placeholder {
+    color: #818181;
+    font-family: sans-serif;
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
